@@ -46,12 +46,13 @@ foreach(var item in quiz)
         incorrectAnswer++;
     }
 }
-System.Console.WriteLine("Your result:");
-System.Console.WriteLine("Correct answer: {0}",correctAnswer);
-System.Console.WriteLine("Incorrect answer: {0}",incorrectAnswer);
+Console.WriteLine();
+Console.WriteLine("Your result:");
+Console.WriteLine("Correct answer: {0}",correctAnswer);
+Console.WriteLine("Incorrect answer: {0}",incorrectAnswer);
 
 bool CheckAnswer(char answer)
 {
     char input = Console.ReadKey().KeyChar;
-    return char.ToUpper(input)==char.ToUpper(input);
+    return char.ToUpper(input)==char.ToUpper(answer);
 }
